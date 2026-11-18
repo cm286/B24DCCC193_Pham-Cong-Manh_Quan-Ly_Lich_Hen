@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Quản lý lịch hẹn</string>
+
+    <!-- Login -->
+    <string name="login_title">Đăng nhập</string>
+    <string name="login_subtitle">Quản lý lịch hẹn cá nhân</string>
+    <string name="hint_username">Tên đăng nhập</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="err_login_empty">Vui lòng nhập tên đăng nhập và mật khẩu</string>
+    <string name="err_login_wrong">Sai tên đăng nhập hoặc mật khẩu</string>
+
+    <!-- Main -->
+    <string name="main_title">Lịch hẹn của tôi</string>
+    <string name="stats_format">Tổng số: %1$d lịch hẹn  ·  Đang bật nhắc nhở: %2$d</string>
+    <string name="empty_list">Chưa có lịch hẹn nào.\nNhấn “Thêm lịch hẹn” để tạo mới.</string>
+    <string name="btn_add">+ Thêm lịch hẹn</string>
+    <string name="badge_reminder_on">Có nhắc</string>
+    <string name="badge_reminder_off">Không nhắc</string>
+
+    <!-- Add -->
+    <string name="add_title">Thêm lịch hẹn</string>
+    <string name="hint_title">Tên lịch hẹn</string>
+    <string name="hint_location">Địa điểm</string>
+    <string name="label_date">Ngày hẹn</string>
+    <string name="label_time">Giờ hẹn</string>
+    <string name="label_reminder">Nhắc nhở trước giờ hẹn</string>
+    <string name="btn_save">Lưu lịch hẹn</string>
+    <string name="err_title_empty">Tên lịch hẹn không được để trống</string>
+    <string name="err_location_empty">Địa điểm không được để trống</string>
+    <string name="err_time_past">Thời điểm hẹn phải sau thời điểm hiện tại</string>
+    <string name="msg_saved">Đã lưu lịch hẹn</string>
+    <string name="err_save_failed">Lưu lịch hẹn thất bại</string>
+
+    <!-- Detail -->
+    <string name="detail_title">Chi tiết lịch hẹn</string>
+    <string name="label_place">Địa điểm</string>
+    <string name="label_when">Thời gian</string>
+    <string name="label_reminder_detail">Nhắc nhở</string>
+    <string name="reminder_on">Đang bật</string>
+    <string name="reminder_off">Đang tắt</string>
+    <string name="btn_back">Quay lại</string>
+    <string name="btn_delete">Xóa lịch hẹn</string>
+    <string name="msg_deleted">Đã xóa lịch hẹn</string>
+    <string name="err_not_found">Không tìm thấy lịch hẹn</string>
+</resources>
