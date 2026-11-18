@@ -12,6 +12,7 @@
 
     <!-- Main -->
     <string name="main_title">Lịch hẹn của tôi</string>
+    <string name="btn_logout">Đăng xuất</string>
     <string name="stats_format">Tổng số: %1$d lịch hẹn  ·  Đang bật nhắc nhở: %2$d</string>
     <string name="empty_list">Chưa có lịch hẹn nào.\nNhấn “Thêm lịch hẹn” để tạo mới.</string>
     <string name="btn_add">+ Thêm lịch hẹn</string>

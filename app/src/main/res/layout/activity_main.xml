@@ -4,15 +4,40 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/primary"
-        android:padding="16dp"
-        android:text="@string/main_title"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/btnLogout"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/main_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:backgroundTint="@color/danger"
+            android:text="@string/btn_logout"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </RelativeLayout>
 
     <!-- 1. Khối thống kê -->
     <TextView

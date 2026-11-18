@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvEmpty;
     private RecyclerView rvAppointments;
     private Button btnAdd;
+    private Button btnLogout;
 
     private DatabaseHelper db;
     private AppointmentAdapter adapter;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         tvEmpty = findViewById(R.id.tvEmpty);
         rvAppointments = findViewById(R.id.rvAppointments);
         btnAdd = findViewById(R.id.btnAdd);
+        btnLogout = findViewById(R.id.btnLogout);
 
         adapter = new AppointmentAdapter(new AppointmentAdapter.OnItemClickListener() {
             @Override
@@ -51,6 +53,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AddAppointmentActivity.class));
+            }
+        });
+
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish();
             }
         });
     }
